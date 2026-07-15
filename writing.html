@@ -3,11 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Writing Samples — Sydney Olivia Shuster</title>
+<title>Writing &amp; Publications — Sydney Olivia Shuster</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  .pub-entry{
+    padding: 26px 0; border-top: 1px solid var(--rule);
+  }
+  .pub-entry:first-child{ border-top:none; padding-top:0; }
+  .pub-entry h3{
+    font-family:'Source Serif 4', serif; font-weight:600; font-size: 1.12rem;
+    margin: 0 0 4px; color: var(--ink);
+  }
+  .pub-entry .pub-meta{ font-size: 0.88rem; color: var(--muted); margin: 0 0 12px; font-style: italic; }
+  .pub-entry .abstract-label{
+    font-size: 11.5px; font-weight:600; text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--accent); margin: 0 0 6px;
+  }
+  .pub-entry .abstract-text{ font-size: 0.95rem; margin: 0 0 14px; }
+  .pub-entry .abstract-text.tbd{ color: var(--muted); font-style: italic; }
+  .pub-links a{
+    font-size: 13.5px; font-weight:600; text-decoration:none; color: var(--accent);
+    margin-right: 18px;
+  }
+  .pub-links a:hover{ text-decoration: underline; }
+  .oped-block{
+    padding: 22px 24px; background: #F7F8FA; border-left: 3px solid var(--accent);
+    margin: 24px 0 44px;
+  }
+  .oped-block h3{ font-family:'Source Serif 4', serif; font-size: 1.1rem; margin: 0 0 6px; }
+  .oped-block p{ margin: 0 0 12px; color: var(--muted); font-size: 0.95rem; }
+</style>
 </head>
 <body>
 
@@ -30,38 +58,83 @@
 <div class="wrap">
 
   <div class="page-head">
-    <h1>Writing Samples</h1>
-    <p>A selection of science communication and policy writing — op-eds, policy memos, and long-form pieces translating technical research for public and legislative audiences.</p>
+    <h1>Writing &amp; Publications</h1>
+    <p>Peer-reviewed research and public-facing science writing, spanning biophysical chemistry and science policy.</p>
   </div>
 
-  <p class="placeholder-note">This is placeholder content. Replace each entry below with a real title, short description, and a link to the piece (PDF, published article, or a page on this site).</p>
+  <p class="placeholder-note">Abstracts and PDFs are filled in where available. A few entries still need their abstract text and PDF added — see the note at the bottom of this page for exactly how to do that.</p>
 
-  <ul class="item-list">
-    <li>
-      <a class="item-card" href="#">
-        <p class="item-date">2025 · Op-Ed</p>
-        <h3>Op-Ed Title Goes Here</h3>
-        <p class="item-dek">One or two sentences describing the piece and where it was published — e.g. the Albany Times Union op-ed on federal research funding.</p>
-        <span class="item-tag">Read piece →</span>
-      </a>
-    </li>
-    <li>
-      <a class="item-card" href="#">
-        <p class="item-date">2025 · Policy Memo</p>
-        <h3>Policy Memo Title Goes Here</h3>
-        <p class="item-dek">Short description of the memo's argument and intended audience.</p>
-        <span class="item-tag">Read piece →</span>
-      </a>
-    </li>
-    <li>
-      <a class="item-card" href="#">
-        <p class="item-date">2024 · Long-form</p>
-        <h3>Third Writing Sample Title</h3>
-        <p class="item-dek">Add a description here once you decide which piece to feature.</p>
-        <span class="item-tag">Read piece →</span>
-      </a>
-    </li>
-  </ul>
+  <div class="oped-block">
+    <h3>Op-Ed: Federal Science Funding Cuts</h3>
+    <p>Published in the Albany Times Union, translating the public-health and scientific consequences of federal research defunding for a general audience.</p>
+    <a href="https://www.timesunion.com/opinion/article/another-casualty-federal-science-cuts-20824548.php" target="_blank" rel="noopener" style="font-weight:600; font-size:14px;">Read the op-ed →</a>
+  </div>
+
+  <p class="sec-label" style="margin-bottom: 6px;">Peer-Reviewed Publications</p>
+
+  <div class="pub-entry">
+    <h3>Incorporating L-cyanohomoalanine and L-azidohomoalanine into sfGFP using native E. coli machinery</h3>
+    <p class="pub-meta">Shuster S.O., Davis C.M. · Under review; preprint on bioRxiv · 2026</p>
+    <p class="abstract-label">Abstract</p>
+    <p class="abstract-text tbd">[Add abstract text here]</p>
+    <div class="pub-links">
+      <a href="https://www.biorxiv.org/content/10.64898/2026.06.25.734610v1" target="_blank" rel="noopener">bioRxiv preprint →</a>
+      <a href="pdfs/add-cyanohomoalanine-pdf-here.pdf" target="_blank" rel="noopener">PDF (add file)</a>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <h3>Optical photothermal infrared imaging using metabolic probes in biological systems</h3>
+    <p class="pub-meta">Shuster S.O., Curtis A.E., Davis C.M. · Analytical Chemistry · 2025</p>
+    <p class="abstract-label">Abstract</p>
+    <p class="abstract-text tbd">[Add abstract text here]</p>
+    <div class="pub-links">
+      <a href="pdfs/add-analytical-chemistry-pdf-here.pdf" target="_blank" rel="noopener">PDF (add file)</a>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <h3>Oleic acid differentially affects lipid droplet storage of de novo synthesized lipids in hepatocytes and adipocytes</h3>
+    <p class="pub-meta">Shuster S.O., Castillo H.B., Tarkegn L.H., Davis C.M. · Chem. Commun. · 2024</p>
+    <p class="abstract-label">Abstract</p>
+    <p class="abstract-text">Lipogenesis is a vital but often dysregulated metabolic pathway. Here we use optical photothermal infrared imaging to quantify lipogenesis rates of isotopically labelled oleic acid and glucose concomitantly in live cells. In hepatocytes, but not adipocytes, we find that oleic acid feeding at 60 &micro;M increases the number and size of lipid droplets (LDs) while simultaneously inhibiting storage of de novo synthesized lipids in LDs. Our results demonstrate alternate regulation of lipogenesis between cell types.</p>
+    <div class="pub-links">
+      <a href="pdfs/shuster-oleic-acid-chemcomm-2024.pdf" target="_blank" rel="noopener">PDF →</a>
+      <a href="https://doi.org/10.1039/d3cc04829b" target="_blank" rel="noopener">DOI →</a>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <h3>Spatiotemporal heterogeneity of de novo lipogenesis in fixed and living single cells</h3>
+    <p class="pub-meta">Shuster S.O., Burke M.J., Davis C.M. · J. Phys. Chem. B · 2023</p>
+    <p class="abstract-label">Abstract</p>
+    <p class="abstract-text tbd">[Add abstract text here]</p>
+    <div class="pub-links">
+      <a href="pdfs/add-jpcb-2023-pdf-here.pdf" target="_blank" rel="noopener">PDF (add file)</a>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <h3>Watching liquid droplets of TDP-43 CTD age by Raman spectroscopy</h3>
+    <p class="pub-meta">Shuster S.O., Lee J.C. · J. Biol. Chem. · 2021</p>
+    <p class="abstract-label">Abstract</p>
+    <p class="abstract-text tbd">[Add abstract text here]</p>
+    <div class="pub-links">
+      <a href="pdfs/add-jbc-2021-pdf-here.pdf" target="_blank" rel="noopener">PDF (add file)</a>
+    </div>
+  </div>
+
+  <div class="pub-entry">
+    <h3>Tryptophan probes of TDP-43 C-terminal domain amyloid formation</h3>
+    <p class="pub-meta">Shuster S.O., Lee J.C. · J. Phys. Chem. B · 2021</p>
+    <p class="abstract-label">Abstract</p>
+    <p class="abstract-text tbd">[Add abstract text here]</p>
+    <div class="pub-links">
+      <a href="pdfs/add-jpcb-2021-pdf-here.pdf" target="_blank" rel="noopener">PDF (add file)</a>
+    </div>
+  </div>
+
+  <p class="scholar-link" style="margin: 10px 0 50px;">Full publication list: <a href="https://scholar.google.com/citations?user=3XQuWykAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
 
 </div>
 
