@@ -87,14 +87,14 @@
     <p>Two independent batches of each dataset were generated and analyzed at different points ("Trial 1" and "Trial 2" below); file counts differ slightly between trials because of how random sampling and file-parsing failures landed each time (Addgene: 484 files in Trial 1, 483 in Trial 2; Wikipedia: 500 files in both).</p>
 
     <h3>ORF finding</h3>
-    <p>Both trials use a 6-frame open reading frame search (3 forward frames, 3 reverse-complement frames). An ORF is defined as a run from a start codon to the next in-frame stop codon (TAA/TAG/TGA), and only ORFs translating to more than 80 amino acids are kept — this is similar to NCBI ORFfinder's default behavior.</p>
+    <p>Both trials use a 6-frame open reading frame search (3 forward frames, 3 reverse-complement frames). An ORF is defined as a run from a start codon to the next in-frame stop codon (TAA/TAG/TGA), and only ORFs translating to more than 80 amino acids are kept — this is similar to <a href="https://www.ncbi.nlm.nih.gov/orffinder/" target="_blank" rel="noopener">NCBI ORFinder's</a> default behavior.</p>
     <ul>
       <li>Trial 1 used ATG as the only valid start codon.</li>
       <li>Trial 2 additionally searched for the common bacterial alternative start codons GTG, TTG, and CTG. For these, the first residue is still reported as methionine (M), as the ribosome loads an initiator Met-tRNA at the start codon regardless of which codon is used.<sup><a href="#ref3">3</a></sup></li>
     </ul>
 
     <h3>Codon Adaptation Index (CAI)</h3>
-    <p>Each ORF's own codon usage is compared against a real reference table for E. coli (strain W3110, Kazusa Codon Usage Database, 4,332 CDS's / 1,372,057 codons). CAI is reported as a percentage, where 100% means every codon in the ORF is E. coli's single most-preferred synonymous codon for that amino acid. It is a measure of how "E. coli-like" a sequence's codon choices are, not a measure of protein quality or authenticity in general. Notably, the Addgene plasmids were not restricted to those for bacterial expression or only carrying E. coli genes.</p>
+    <p>Each ORF's own codon usage is compared against a real reference table for E. coli (strain W3110, <a href="https://www.kazusa.or.jp/codon/cgi-bin/showcodon.cgi?species=316407Kazusa Codon Usage Database" target="_blank" rel="noopener">Kazusa Codon Unsage Database</a>, 4,332 CDS's / 1,372,057 codons). CAI is reported as a percentage, where 100% means every codon in the ORF is E. coli's single most-preferred synonymous codon for that amino acid. It is a measure of how "E. coli-like" a sequence's codon choices are, not a measure of protein quality or authenticity in general. Notably, the Addgene plasmids were not restricted to those for bacterial expression or only carrying E. coli genes.</p>
 
     <h3>ESM-2 perplexity (Trial 1 only)</h3>
     <p>Each candidate protein was scored with ESM-2 (facebook/esm2_t6_8M_UR50D), a protein language model trained on real protein sequences.<sup><a href="#ref4">4</a></sup> We report a pseudo-perplexity: each residue is masked one at a time, the model predicts it from context, and the negative log-likelihoods are averaged and exponentiated.<sup><a href="#ref5">5</a></sup> Lower perplexity means the model finds a sequence more consistent with real proteins it was trained on.</p>
