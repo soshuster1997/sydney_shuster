@@ -133,6 +133,41 @@
   }
   .skill-group p{ margin:0; color: var(--muted); font-size: 0.95rem; }
 
+  /* Personal */
+  .personal-grid{
+    display:grid; grid-template-columns: 1fr auto; gap: 32px; align-items:center;
+  }
+  .personal-photo{
+    width: 200px; height: 200px;
+    border-radius: 12px;
+    border: 1px solid var(--rule);
+    background: #F7F8FA;
+    object-fit: cover;
+    flex: none;
+  }
+  @media (max-width: 600px){
+    .personal-grid{ grid-template-columns: 1fr; text-align:center; }
+    .personal-photo{ margin: 0 auto; }
+  }
+
+  /* National Parks Tracker */
+  .parks-tracker{ margin-top: 32px; }
+  .parks-tracker h4{
+    font-size: 0.92rem; font-weight:600; color: var(--ink); margin: 0 0 12px;
+  }
+  .parks-progress-bar{
+    width: 100%; height: 8px; border-radius: 4px;
+    background: var(--rule); overflow: hidden; margin: 0 0 8px;
+  }
+  .parks-progress-fill{
+    height: 100%; background: var(--accent); border-radius: 4px;
+  }
+  .parks-count{ font-size: 0.88rem; color: var(--muted); margin: 0 0 18px; }
+  .parks-map{
+    width: 100%; max-width: 560px; height: auto;
+    border: 1px solid var(--rule); border-radius: 8px; display:block;
+  }
+
   /* Ledger */
   .ledger{ list-style:none; margin:0; padding:0; }
   .ledger li{
