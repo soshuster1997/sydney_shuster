@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNA Synthesis Screening — Sydney Olivia Shuster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="initials" style="text-decoration:none;">S. O. Shuster</a>
+    <nav>
+      <a href="index.html#profile">Profile</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#policy">Policy</a>
+      <a href="index.html#publications">Publications</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="writing.html">Writing</a>
+      <a href="blog.html">Blog</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="page-head">
+    <p class="item-date">2026</p>
+    <h1>DNA Synthesis Screening</h1>
+  </div>
+
+  <div class="post-body">
+
+    <h3>What are the intended goals of this intervention?</h3>
+    <p>Custom DNA sequences can now be ordered online from a variety of providers for under 10 cents a base pair. As a graduate researcher, I regularly order genes and plasmids from places like Twist and Genscript to allow me to express the proteins I study. DNA synthesis has revolutionized genetics, biochemistry, biophysics and more. For example, it is critical to my work in understanding protein misfolding and clearance in neurodegenerative disease. However, as these services become cheaper and more accessible, risk increases that bad actors may use synthetic DNA to express toxic proteins (eg ricin) or even reconstruct whole pathogenic viruses. DNA synthesis screening aims to detect worrying orders, such as those containing sequences of concern (SOC), ie DNA that encodes for toxic, pathogenic, or otherwise dangerous proteins or whole viruses. The intervention aims to stop potential bioterrorism and ensure that dangerous sequences are used only by those with the proper training, biosafety controls and who need them to move forward important research.</p>
+
+    <h3>What is the current state of this intervention, and to what extent is it achieving its goals?</h3>
+    <p>Uniform, standardized DNA synthesis screening was recommended by the U.S. National Science Advisory Board for Biosecurity (NSABB) in 2006. Many major DNA providers, including Twist Biosciences, voluntarily adopted screening procedures. Several groups have released guidelines for DNA and customer screening including Health and Human Services 2010 Screening Framework Guidance, the International Gene Synthesis Consortium (IGSC) Harmonized Screening Protocol, and the International Biosecurity and Biosafety Initiative for Science (IBBIS) 2024 Sequence Biosecurity Risk Consortium (SBRC). In 2024, the 2024 Framework for Nucleic Acid Synthesis Screening was adopted in the United States, requiring those who receive federal funding for research use DNA synthesis companies that screen and recommending that providers screen orders for SOCs, verify customer legitimacy, maintain transaction records, and adhere to cybersecurity standards. The National Institute of Standards and Technology (NIST) was tasked with developing the supporting technical standards. However, this framework was rescinded in a 2025 executive order and has not yet been replaced.</p>
+    <p>Screening is common amongst DNA synthesis providers and eight screening approaches are currently commercially or publicly available: Aclid, BLISS, Raytheon's FastNA, SecureDNA, SeqScreen, Battelle's ThreatSeq, and IBBIS's CommonMechanism. Private, company specific screening mechanisms also exist. These approaches use different types of search tools (including BLAST sequence alignment, k-mer look-ups, and profile searching, or a combination of these three) but generally try to match customer submitted sequences to SOCs. Screening tools continue to improve and adapt to detect SOCs in smaller DNA fragments.</p>
+    <p>To me, it seems that when screening tools are used, they are likely to be effective. However, implementation, standardization, and policy remain large roadblocks in ensuring DNA synthesis screening is adequate to prevent DNA misuse and persistent bad actors may be able to thwart screening through use of AI, DNA fragmentation, and benchtop synthesizers.</p>
+
+    <h3>What are the most critical holes in this intervention?</h3>
+    <p>Currently, there are holes in policy and implementation. The US has not adopted a single framework for DNA synthesis screening. There is not a single database for SOCs. Companies must balance screening effectively (ie being able to catch mutants of toxins, small &lt;100 bp sequences that could be stitched together into SOCs, recognizing AI generated sequences with low sequence homology but high structural homology to toxins etc) with speed and cost. Many sequences are obtained through legacy, collaborations, or repositories, making screening also an institutional requirement when biosafety is generally underfunded in most academic labs. Benchtop synthesizers, which are rapidly advancing in capability, also present a unique challenge as screening would need to be built into the instrument and software and not easily be 'jailbroken.'</p>
+
+    <h3>What are the key challenges to implementing a more robust version of this intervention, and how could you overcome them?</h3>
+    <p><strong>Challenge:</strong> unequal/absent screening between providers<br>
+    <strong>Solution:</strong> A single framework and mechanism for screening and a database for SOCs must be developed and adopted by the US and other governments.</p>
+    <p><strong>Challenge:</strong> Screening can present an undue burden on scientists and companies in time and money.<br>
+    <strong>Solution:</strong> This screening must be rigorously challenged against test datasets to ensure capture of dangerous SOCs while minimizing false positives, which delay science and increase cost exponentially when manual review is required. A tiered risk assessment may be appropriate even when SOCs are flagged as recommended in Gillum and Moritz 2025.</p>
+    <p><strong>Challenge:</strong> Benchtop synthesizers can synthesize SOCs in the lab with no screening<br>
+    <strong>Solution:</strong> Know-your-customer screening must also be required for benchtop synthesizers</p>
+    <p><strong>Challenge:</strong> AI allows bad actors to produce toxins that do not match existing SOCs<br>
+    <strong>Solution:</strong> Screening may need to incorporate function/structure based screening of open reading frames. This may only be feasible for sequences that flag in some other way, highlighting the importance of know your customer screening.</p>
+
+    <a class="back-link" href="blog.html">← Back to all posts</a>
+  </div>
+
+</div>
+
+<footer class="foot">© 2026 Sydney Olivia Shuster</footer>
+
+</body>
+</html>
