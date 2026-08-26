@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pathogen Agnostic DNA Sequencing — Sydney Olivia Shuster</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="initials" style="text-decoration:none;">S. O. Shuster</a>
+    <nav>
+      <a href="index.html#profile">Profile</a>
+      <a href="index.html#personal">Personal</a>
+      <a href="index.html#education">Education</a>
+      <a href="writing.html">Writing &amp; Publications</a>
+      <a href="blog.html">Blog</a>
+      <a href="biorep.html">Biosecurity Registry</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="ShusterCV.pdf" target="_blank" rel="noopener">CV</a>
+    </nav>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="page-head">
+    <p class="item-date">August 2026</p>
+    <h1>Pathogen Agnostic DNA Sequencing: Notes from the BlueDot Biosecurity Course</h1>
+  </div>
+
+  <div class="post-body">
+    <p>Currently, a number of modern sequencing techniques allow for the pathogen-agnostic detection needed for metagenomic sequencing (MGS) to be an effective early detection tool. However, several improvements need to be made for MGS to become as inexpensive, accessible, and prolific as PCR and Sanger sequencing.</p>
+
+    <p>Modern sequencing techniques generally fall into two groups: next-generation sequencing (NGS), pioneered by Illumina, and third-generation sequencing (TGS). NGS works by first extracting DNA (or RNA) from a sample, then fragmenting it into short sequences and forming a "library" through the attachment of adapters to those fragments. The fragments are then loaded onto a microfluidics chip, where they attach to DNA oligomers and are prepared for sequencing (i.e., amplified into clusters and made single-stranded). The DNA is then sequenced through a repetitive process of flowing fluorescently labeled nucleotides over the sample and using a camera to read which colors bind. Finally, the resulting images are analyzed, cleaning up unclear signal and removing overlapping clusters. This is a very high-throughput option and is sequence-agnostic—any DNA, even completely novel viral DNA, can be analyzed. However, sequencing is limited to short fragments, and aligning these fragments into complete stretches of DNA can require a reference genome and significant bioinformatics pipelines.</p>
+
+    <p>There are several types of TGS, but I'll focus on the most commercialized: nanopore sequencing by Oxford Nanopore. Nanopore sequencing works by using a specialized motor protein to feed a length of single-stranded DNA through a protein nanopore anchored in a membrane. As each base passes through the nanopore, the resulting change in electric current can be detected and correlated with the type of nucleotide. Nanopore sequencing can handle extremely long sequences in a single run.</p>
+
+    <p>Currently, both NGS and TGS are widely used in research and personalized medicine but lack widespread adoption in point-of-care diagnostics and surveillance screening, for a few key reasons. First, both techniques currently cost 3–25x as much as PCR, with nanopore sequencing on the higher end. Second, sample preparation for these techniques is time-intensive and technically difficult. Third, time-to-results varies but is generally much slower than PCR, though nanopore sequencing can already be faster; some of this delay comes from computational bottlenecks, and current bioinformatics pipelines still need better reference sequences. Finally, and perhaps most importantly, NGS and TGS both sequence all DNA in a sample, making it a signal-detection problem to distinguish pathogen DNA from host or background DNA. PCR, by contrast, is targeted and thus blind to background DNA.</p>
+
+    <p>Making MGS as ubiquitous as PCR—and a useful tool for identifying new pathogens in patient samples and wastewater—will require faster, cheaper, easier-to-use NGS and TGS. It is likely possible to perform library preparation steps inside a machine using a cartridge-like setup. Techniques can become less expensive through improved microfluidics manufacturing. A promising direction for faster sequencing is reoptimizing away from the extremely high sequence fidelity needed for research and precision medicine but unnecessary for pathogen recognition. To make MGS effective at screening for unknown pathogens, host DNA depletion will also be needed (options include preparation steps, adaptive nanopore sequencing, and computational tools). Since the current customers of MGS are primarily research and precision medicine, explicit government funding and direction, similar to the $1,000 Genome Project, will be needed to drive this innovation, some of which is already underway, including the work of SecureBio.</p>
+
+    <a class="back-link" href="blog.html">← Back to all posts</a>
+  </div>
+
+</div>
+
+<footer class="foot">© 2026 Sydney Olivia Shuster</footer>
+
+</body>
+</html>
